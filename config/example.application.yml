@@ -1,0 +1,9 @@
+development:
+  TWILIO_ACCOUNT_SID: 'Twilio Account SID'
+  TWILIO_AUTH_TOKEN: 'AUTH Token'
+  TWILIO_PHONE_NUMBER: 'Twilio Generated Phone Number'
+
+production:
+  TWILIO_ACCOUNT_SID: 'Twilio Account SID'
+  TWILIO_AUTH_TOKEN: 'AUTH Token'
+  TWILIO_PHONE_NUMBER: 'Twilio Generated Phone Number'
