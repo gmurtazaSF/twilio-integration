@@ -1,0 +1,28 @@
+<div class="text-center mt-4">
+  <h1>Notifications</h1>
+</div>
+
+<%= button_to 'Sign Out', destroy_user_session_path, method: :delete,  class: 'btn btn-danger mb-3 mx-2' %>
+
+<div class="table-responsive">
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Phone Number</th>
+        <th>Message</th>
+        <th>Trigger</th>
+        <th>Sent at</th>
+      </tr>
+    </thead>
+
+    <%= render(@notifications) %>
+  </table>
+</div>
+
+<% if @pagy.pages > 1 %>
+  <nav aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+      <%= pagy_nav(@pagy).html_safe %>
+    </ul>
+  </nav>
+<% end %>

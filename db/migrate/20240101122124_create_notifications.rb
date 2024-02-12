@@ -3,6 +3,7 @@ class CreateNotifications < ActiveRecord::Migration[7.0]
     create_table :notifications do |t|
       t.string :recipient_phone, null: false
       t.text :message, null: false
+      t.text :trigger, null: false
 
       t.timestamps
     end

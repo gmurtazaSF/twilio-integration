@@ -17,6 +17,7 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_01_122124) do
   create_table "notifications", force: :cascade do |t|
     t.string "recipient_phone", null: false
     t.text "message", null: false
+    t.text "trigger", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
